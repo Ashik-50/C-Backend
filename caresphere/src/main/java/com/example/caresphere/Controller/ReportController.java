@@ -17,7 +17,7 @@ import com.example.caresphere.Model.Report;
 import com.example.caresphere.Service.ReportService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequestMapping("/doctor")
 public class ReportController {
 
