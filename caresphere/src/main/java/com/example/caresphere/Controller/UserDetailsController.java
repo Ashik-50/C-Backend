@@ -8,7 +8,7 @@ import com.example.caresphere.Service.UserDetailsService;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequestMapping("/userdetails")
 public class UserDetailsController {
 

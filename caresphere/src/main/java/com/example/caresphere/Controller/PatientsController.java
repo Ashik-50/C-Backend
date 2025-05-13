@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.caresphere.Model.Patients;
 import com.example.caresphere.Service.PatientsService;
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequestMapping("/doctor")
 public class PatientsController {
 
