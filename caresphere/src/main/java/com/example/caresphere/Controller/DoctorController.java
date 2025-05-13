@@ -10,7 +10,7 @@ import com.example.caresphere.Service.DoctorService;
 
 @RestController
 @RequestMapping("/doctors")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class DoctorController {
 
     private final DoctorService doctorService;
