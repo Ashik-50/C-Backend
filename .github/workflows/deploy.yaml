@@ -28,10 +28,10 @@ jobs:
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
     - name: Build Docker image
-      run: docker build -t ashik50/c-backend:latest .
+      run: docker build -t ashik47/c-backend:latest .
 
     - name: Push Docker image
-      run: docker push ashik50/c-backend:latest
+      run: docker push ashik47/c-backend:latest
 
     - name: Trigger Render Deployment
       run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
